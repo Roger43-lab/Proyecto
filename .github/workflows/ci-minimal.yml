@@ -1,0 +1,13 @@
+name: CI Test Mínimo
+on: [push]  # Se ejecuta al hacer push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Prueba exitosa
+        run: echo "¡Este CI siempre pasa! ✅"
+
